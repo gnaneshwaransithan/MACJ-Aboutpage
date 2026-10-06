@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="web_standard" name="shell-type">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#d8dadc", "surface-container-low": "#f2f4f6", "on-tertiary-fixed-variant": "#314671", "error-container": "#ffdad6", "tertiary-fixed": "#d8e2ff", "on-primary-container": "#7585a8", "status-warning": "#f59e0b", "on-secondary-fixed-variant": "#92001d", "on-tertiary-fixed": "#001a42", "text-body": "#334155", "background": "#f7f9fb", "on-secondary": "#ffffff", "on-background": "#191c1e", "surface-container-highest": "#e0e3e5", "secondary": "#bb0027", "surface-tint": "#4f5e7f", "on-surface": "#191c1e", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb3b1", "secondary-container": "#e41c39", "primary-container": "#0b1d3a", "tertiary": "#000311", "on-tertiary-container": "#7085b4", "on-primary-fixed": "#091b38", "on-error-container": "#93000a", "whatsapp-direct": "#25d366", "tertiary-container": "#011c45", "surface-bright": "#f7f9fb", "on-secondary-fixed": "#410007", "on-tertiary": "#ffffff", "surface-subtle": "#f1f5f9", "surface-card": "#ffffff", "on-secondary-container": "#fffbff", "secondary-fixed": "#ffdad8", "primary-fixed": "#d7e2ff", "on-primary-fixed-variant": "#374766", "status-info": "#0284c7", "surface-container-lowest": "#ffffff", "brand-accent-hover": "#d31834", "outline": "#75777e", "tertiary-fixed-dim": "#b1c6f8", "border-strong": "#cbd5e1", "primary": "#00030f", "surface-container": "#eceef0", "text-muted": "#64748b", "inverse-on-surface": "#eff1f3", "inverse-primary": "#b6c7ec", "surface": "#f7f9fb", "surface-variant": "#e0e3e5", "surface-container-high": "#e6e8ea", "inverse-surface": "#2d3133", "on-surface-variant": "#44474d", "primary-fixed-dim": "#b6c7ec", "outline-variant": "#c5c6ce", "on-error": "#ffffff", "border-subtle": "#e2e8f0", "text-primary": "#0f172a", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1.5rem", "space-sm": "0.5rem", "space-2xl": "4rem", "space-md": "1rem", "gutter-mobile": "1rem", "margin": "2rem", "space-xl": "2.5rem", "space-3xl": "6rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-mobile": "1rem" }, "fontFamily": { "display": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-sm": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "eyebrow-badge": ["Plus Jakarta Sans"] }, "fontSize": { "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "display-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "eyebrow-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }] } } } };</script>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased">
+    <header
+        class="fixed top-0 left-0 right-0 z-50 bg-surface-card border-b border-border-subtle shadow-[0_1px_8px_rgba(11,29,58,0.06)]">
+        <div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between gap-space-md">
+            <div class="flex items-center gap-space-md shrink-0"><img alt="MACKJ-Logo.png"
+                    class="h-8 w-auto object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVrFhi-o7TGymuTyfn91MbEi4NN6aZizpdIWkOzOj4_gicleVqd7jBKTkzjBLVTmYxDUsTXgq2LL5iV7EGLZCwUe65kfoun-uPcEZtb3bmu_W3lu90sRkA0n4A5iiUTIqautDp8tc5ri0xXAZiX05NCpxFki9xARi048oQebj6MpWSGJ5Yww0Fv5iwNMNKL9flPUmOHS8162253XPeSAPcMzOByrSBMBEDu5NYLzt7CiFM_A9NTd0jQPs6NuhXb-7t03w23cFfM_yPqMM">
+                <div class="hidden sm:flex flex-col border-l border-border-subtle pl-space-sm"></div>
+            </div>
+            <nav class="hidden xl:flex items-center gap-space-lg"
+                data-active-classes="text-secondary-container font-semibold"><a
+                    class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    data-path="services" href="#">Services</a><a
+                    class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    data-path="diagnostic-approach" href="#">Diagnostic Approach</a><a
+                    class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    data-path="case-evidence" href="#">Case Evidence</a><a
+                    class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    data-path="what-you-receive" href="#">What You Receive</a><a
+                    class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    data-path="faqs" href="#">FAQs</a></nav>
+            <div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><a
+                    class="hidden md:inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-subtle hover:bg-surface-container-high transition-colors text-text-body font-label-md text-label-md border border-border-subtle"
+                    href="https://wa.me/918017054000" rel="noopener noreferrer" target="_blank"><span
+                        class="material-symbols-outlined text-whatsapp-direct text-[18px]">chat</span><span
+                        class="font-medium">+91 80170 54000</span></a><a
+                    class="inline-flex items-center justify-center px-space-md py-2.5 rounded-lg bg-secondary-container hover:bg-brand-accent-hover text-on-secondary font-label-md text-label-md font-semibold shadow-sm transition-all text-center whitespace-nowrap"
+                    data-path="diagnostic-intake" href="#">Help Us Understand The Problem</a>
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-20 bg-surface">
+        <div class="flex flex-col w-full">
+            <!-- ==========================================
+       SECTION 1: HERO + ABOVE-THE-FOLD ENQUIRY FORM
+       ========================================== -->
+            <section class="relative w-full bg-surface-subtle overflow-hidden">
+                <!-- Subtle architectural background glow -->
+                <div
+                    class="absolute -top-32 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-80 h-80 bg-secondary-container/5 rounded-full blur-2xl pointer-events-none">
+                </div>
+                <div class="max-w-[1240px] mx-auto px-gutter py-space-xl lg:py-space-2xl">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+                        <!-- Left Column: Diagnostic Narrative & Authority (7 cols on desktop) -->
+                        <div class="lg:col-span-7 flex flex-col space-y-space-md">
+                            <!-- Eyebrow Pill -->
+                            <div
+                                class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-primary-container text-on-primary w-fit shadow-sm">
+                                <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                                <span
+                                    class="font-eyebrow-badge text-eyebrow-badge uppercase tracking-wider font-semibold">DAMP
+                                    • SEEPAGE • LEAKAGE • MOISTURE DIAGNOSTICS</span>
+                            </div>
+                            <!-- Main H1 Title -->
+                            <h1 class="font-display text-display text-primary-container leading-tight">
+                                Damp, Seepage or Leakage? <br>
+                                <span class="text-secondary-container">Find the Source</span> Before You Repair.
+                            </h1>
+                            <!-- Supporting Precision Copy -->
+                            <p class="font-body-lg text-body-lg text-text-body max-w-2xl leading-relaxed">
+                                The wet patch you see may be the symptom — not where the moisture is entering. <span
+                                    class="font-semibold text-primary">MACJ – A Buyer’s Choice</span> combines
+                                systematic site assessment, precision moisture detection, and thermal imaging where
+                                appropriate to trace the entry pathway as reasonably determinable before unnecessary
+                                breaking occurs.
+                            </p>
+                            <!-- 3L Objective Component (Visually Highlighted Horizontal Row) -->
+                            <div class="pt-space-xs pb-space-xs">
+                                <div
+                                    class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm bg-surface-card p-space-sm rounded-xl shadow-sm">
+                                    <!-- Item 1 -->
+                                    <div
+                                        class="flex items-start gap-space-xs p-space-xs rounded-lg hover:bg-surface-subtle transition-colors">
+                                        <div
+                                            class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 text-primary-container">
+                                            <span class="material-symbols-outlined text-[20px]">trending_down</span>
+                                        </div>
+                                        <div>
+                                            <h2
+                                                class="font-headline-sm text-[15px] font-bold text-primary-container leading-tight">
+                                                Lower Avoidable Cost</h2>
+                                            <p class="font-body-sm text-[12px] text-text-muted mt-0.5 leading-snug">
+                                                Focus on evidence-supported areas.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div
+                                        class="flex items-start gap-space-xs p-space-xs rounded-lg hover:bg-surface-subtle transition-colors">
+                                        <div
+                                            class="w-8 h-8 rounded-lg bg-secondary-container/10 flex items-center justify-center shrink-0 text-secondary-container">
+                                            <span class="material-symbols-outlined text-[20px]">construction</span>
+                                        </div>
+                                        <div>
+                                            <h2
+                                                class="font-headline-sm text-[15px] font-bold text-primary-container leading-tight">
+                                                Less Breaking</h2>
+                                            <p class="font-body-sm text-[12px] text-text-muted mt-0.5 leading-snug">
+                                                Narrow the target before damage.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div
+                                        class="flex items-start gap-space-xs p-space-xs rounded-lg hover:bg-surface-subtle transition-colors">
+                                        <div
+                                            class="w-8 h-8 rounded-lg bg-whatsapp-direct/10 flex items-center justify-center shrink-0 text-whatsapp-direct">
+                                            <span class="material-symbols-outlined text-[20px]">verified</span>
+                                        </div>
+                                        <div>
+                                            <h2
+                                                class="font-headline-sm text-[15px] font-bold text-primary-container leading-tight">
+                                                Longer-Lasting</h2>
+                                            <p class="font-body-sm text-[12px] text-text-muted mt-0.5 leading-snug">
+                                                Address root entry point, not patch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="font-body-sm text-[11px] text-text-muted italic mt-1.5 pl-1">
+                                    * Objectives of a source-first diagnostic process; outcomes depend on physical site
+                                    conditions, access, and findings.
+                                </p>
+                            </div>
+                            <!-- Proof Metrics Bar -->
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs">
+                                <div class="bg-surface-card p-3 rounded-lg shadow-sm">
+                                    <span
+                                        class="block font-headline-md text-headline-md text-primary font-bold">8,000+</span>
+                                    <span class="font-label-sm text-label-sm text-text-muted">Inspections
+                                        Completed</span>
+                                </div>
+                                <div class="bg-surface-card p-3 rounded-lg shadow-sm">
+                                    <span class="block font-headline-md text-headline-md text-primary font-bold">8+
+                                        Cities</span>
+                                    <span class="font-label-sm text-label-sm text-text-muted">Major Metros
+                                        Covered</span>
+                                </div>
+                                <div class="bg-surface-card p-3 rounded-lg shadow-sm">
+                                    <span class="block font-headline-md text-headline-md text-primary font-bold">ISO
+                                        &amp; Inter</span>
+                                    <span class="font-label-sm text-label-sm text-text-muted">Certified
+                                        Methodology</span>
+                                </div>
+                                <div class="bg-surface-card p-3 rounded-lg shadow-sm">
+                                    <span
+                                        class="block font-headline-md text-headline-md text-secondary-container font-bold">100%
+                                        Unbiased</span>
+                                    <span class="font-label-sm text-label-sm text-text-muted">Zero Repair Sales</span>
+                                </div>
+                            </div>
+                            <!-- Inspector Visual Feature Card -->
+                            <div
+                                class="relative rounded-xl overflow-hidden bg-primary-container text-on-primary shadow-md p-space-md mt-space-sm flex flex-col sm:flex-row items-center gap-space-md">
+                                <div
+                                    class="w-full sm:w-44 h-32 rounded-lg overflow-hidden shrink-0 relative bg-primary">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="An Indian male inspection engineer wearing a professional dark navy MACJ polo uniform holding an electronic pinless moisture detector against a damp painted bedroom wall with visible peeling plaster under technical daylight inspection lighting"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDly1xHeI0Kr_VPzt8QlvFoNc8so2uMbPpftOFTQKqBKnOHBZP_sl8stBGu9gd1G1xRu5z1gzweHU7AMmR3E3HqkrRbshOnO1cZ9xhu_u_k2Ja5JdWgdpkps1kjHijaC9_VCEt28KroLkBUDwuv8H6YjA0oSx2-dLUuhZbHV8EcxJFfTjlQ4CMnQ23lyMLIj36lSy-FBZsmimkUXz1PK6v-O8GCu3-pY4OSoOtYlFM">
+                                    <div
+                                        class="absolute bottom-1 right-1 bg-surface-card/90 text-primary-container text-[10px] font-bold px-1.5 py-0.5 rounded">
+                                        FIELD AUDIT
+                                    </div>
+                                </div>
+                                <div class="flex-1 space-y-1">
+                                    <div class="flex items-center gap-2">
+                                        <span
+                                            class="material-symbols-outlined text-secondary-container text-[18px]">biotech</span>
+                                        <span
+                                            class="font-label-sm text-label-sm tracking-wider uppercase text-on-primary-container font-bold">Calibrated
+                                            Instruments</span>
+                                    </div>
+                                    <p class="font-body-sm text-[13px] text-surface-subtle leading-relaxed">
+                                        Non-destructive high-frequency moisture sensors paired with FLIR thermal
+                                        thermography pinpoint concealed moisture gradients behind walls, tiles, and
+                                        under slabs without drilling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Column: High-Conversion Above-the-Fold Form (5 cols on desktop) -->
+                        <div class="lg:col-span-5 w-full">
+                            <div class="bg-surface-card rounded-xl p-space-lg shadow-xl relative">
+                                <!-- Accent Top Stripe -->
+                                <div class="absolute top-0 left-0 right-0 h-1.5 bg-secondary-container rounded-t-xl">
+                                </div>
+                                <div class="mb-space-md">
+                                    <div class="flex items-center justify-between">
+                                        <h2 class="font-headline-md text-headline-md text-primary-container font-bold">
+                                            Tell Us What You See</h2>
+                                        <span
+                                            class="px-2 py-0.5 rounded bg-surface-subtle text-primary font-label-sm text-[11px] font-semibold">Triage
+                                            Desk</span>
+                                    </div>
+                                    <p class="font-body-sm text-body-sm text-text-muted mt-1">Start with the symptom.
+                                        You don't need to know the cause.</p>
+                                </div>
+                                <form class="space-y-space-sm" id="hero-diagnostic-form"
+                                    onsubmit="event.preventDefault(); alert('Thank you. A diagnostic engineer will review your issue and connect with you shortly.');">
+                                    <!-- Problem Type -->
+                                    <div>
+                                        <label
+                                            class="block font-label-sm text-[13px] font-semibold text-text-primary mb-1"
+                                            for="problem-type">What symptom are you observing?</label>
+                                        <div class="relative">
+                                            <select
+                                                class="w-full h-11 px-3 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none transition-all"
+                                                id="problem-type" required="">
+                                                <option disabled="" selected="" value="">Select observable issue...
+                                                </option>
+                                                <option value="damp_wall">Damp wall / Peeling paint / Salt leaching
+                                                </option>
+                                                <option value="ceiling_seepage">Ceiling seepage / Staining / Dripping
+                                                </option>
+                                                <option value="bathroom_leak">Bathroom / Concealed wet area leak
+                                                </option>
+                                                <option value="window_facade">External wall / Window rain seepage
+                                                </option>
+                                                <option value="terrace_roof">Terrace / Roof slab leakage</option>
+                                                <option value="recurring_repaired">Unexplained moisture returned after
+                                                    repairs</option>
+                                                <option value="mould_odour">Mould, black spots or musty odour</option>
+                                                <option value="not_sure">Not sure / Multiple symptoms</option>
+                                            </select>
+                                            <span
+                                                class="material-symbols-outlined absolute right-3 top-3 text-text-muted pointer-events-none text-[18px]">expand_more</span>
+                                        </div>
+                                    </div>
+                                    <!-- City & Property Type in 2-cols -->
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+                                        <div>
+                                            <label
+                                                class="block font-label-sm text-[13px] font-semibold text-text-primary mb-1"
+                                                for="city-select">Your City</label>
+                                            <div class="relative">
+                                                <select
+                                                    class="w-full h-11 px-3 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none"
+                                                    id="city-select" required="">
+                                                    <option disabled="" selected="" value="">Select city</option>
+                                                    <option value="Kolkata">Kolkata (HQ)</option>
+                                                    <option value="Mumbai">Mumbai &amp; MMR</option>
+                                                    <option value="Delhi NCR">Delhi NCR</option>
+                                                    <option value="Bengaluru">Bengaluru</option>
+                                                    <option value="Pune">Pune</option>
+                                                    <option value="Hyderabad">Hyderabad</option>
+                                                    <option value="Chennai">Chennai</option>
+                                                    <option value="Ahmedabad">Ahmedabad</option>
+                                                    <option value="Other">Other City</option>
+                                                </select>
+                                                <span
+                                                    class="material-symbols-outlined absolute right-3 top-3 text-text-muted pointer-events-none text-[18px]">expand_more</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label
+                                                class="block font-label-sm text-[13px] font-semibold text-text-primary mb-1"
+                                                for="property-type">Property Type</label>
+                                            <div class="relative">
+                                                <select
+                                                    class="w-full h-11 px-3 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container appearance-none"
+                                                    id="property-type" required="">
+                                                    <option disabled="" selected="" value="">Select type</option>
+                                                    <option value="Apartment">Apartment / Flat</option>
+                                                    <option value="Independent House">Villa / Bungalow</option>
+                                                    <option value="Office">Commercial / Office</option>
+                                                    <option value="Retail / Hotel">Hotel / Hospitality</option>
+                                                    <option value="Common Area">Housing Society / RWA</option>
+                                                </select>
+                                                <span
+                                                    class="material-symbols-outlined absolute right-3 top-3 text-text-muted pointer-events-none text-[18px]">expand_more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- How Long? Radio Pills -->
+                                    <div>
+                                        <span
+                                            class="block font-label-sm text-[13px] font-semibold text-text-primary mb-1.5">How
+                                            long has this issue persisted?</span>
+                                        <div class="grid grid-cols-4 gap-1.5">
+                                            <label class="cursor-pointer">
+                                                <input checked="" class="peer sr-only" name="duration" type="radio"
+                                                    value="Recent">
+                                                <span
+                                                    class="block text-center py-2 px-1 rounded-md text-[12px] font-medium bg-surface-subtle text-text-body peer-checked:bg-primary-container peer-checked:text-on-primary transition-all">Recent</span>
+                                            </label>
+                                            <label class="cursor-pointer">
+                                                <input class="peer sr-only" name="duration" type="radio"
+                                                    value="Few months">
+                                                <span
+                                                    class="block text-center py-2 px-1 rounded-md text-[12px] font-medium bg-surface-subtle text-text-body peer-checked:bg-primary-container peer-checked:text-on-primary transition-all">Months</span>
+                                            </label>
+                                            <label class="cursor-pointer">
+                                                <input class="peer sr-only" name="duration" type="radio"
+                                                    value="Long standing">
+                                                <span
+                                                    class="block text-center py-2 px-1 rounded-md text-[12px] font-medium bg-surface-subtle text-text-body peer-checked:bg-primary-container peer-checked:text-on-primary transition-all">1+
+                                                    Year</span>
+                                            </label>
+                                            <label class="cursor-pointer">
+                                                <input class="peer sr-only" name="duration" type="radio"
+                                                    value="Recurring">
+                                                <span
+                                                    class="block text-center py-2 px-1 rounded-md text-[12px] font-medium bg-surface-subtle text-text-body peer-checked:bg-primary-container peer-checked:text-on-primary transition-all">Recurring</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- Name -->
+                                    <div>
+                                        <label
+                                            class="block font-label-sm text-[13px] font-semibold text-text-primary mb-1"
+                                            for="client-name">Your Full Name</label>
+                                        <input
+                                            class="w-full h-11 px-3 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+                                            id="client-name" placeholder="e.g. Rahul Sharma" required="" type="text">
+                                    </div>
+                                    <!-- Mobile with Country Code -->
+                                    <div>
+                                        <label
+                                            class="block font-label-sm text-[13px] font-semibold text-text-primary mb-1"
+                                            for="client-phone">WhatsApp / Contact Number</label>
+                                        <div class="flex">
+                                            <span
+                                                class="inline-flex items-center px-3 bg-surface-container text-text-muted font-mono text-[13px] rounded-l-lg select-none">🇮🇳
+                                                +91</span>
+                                            <input
+                                                class="w-full h-11 px-3 bg-surface-subtle text-on-surface rounded-r-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+                                                id="client-phone" pattern="[6-9][0-9]{9}" placeholder="98765 43210"
+                                                required="" type="tel">
+                                        </div>
+                                    </div>
+                                    <!-- Photo Upload Zone -->
+                                    <div>
+                                        <div
+                                            class="p-3 rounded-lg bg-surface-subtle hover:bg-surface-container transition-colors cursor-pointer text-center">
+                                            <div class="flex items-center justify-center gap-2 text-text-muted">
+                                                <span
+                                                    class="material-symbols-outlined text-[20px] text-secondary-container">add_a_photo</span>
+                                                <span
+                                                    class="font-label-sm text-[13px] font-medium text-text-primary">Attach
+                                                    Problem Photos (Optional)</span>
+                                            </div>
+                                            <p class="font-body-sm text-[11px] text-text-muted mt-0.5">Used strictly for
+                                                preliminary engineer triage and scope assessment</p>
+                                        </div>
+                                    </div>
+                                    <!-- Primary Submit CTA -->
+                                    <button
+                                        class="w-full py-3.5 px-space-md rounded-lg bg-secondary-container hover:bg-brand-accent-hover text-on-secondary font-headline-sm text-[15px] font-bold tracking-wide shadow-md transition-all flex items-center justify-center gap-2"
+                                        type="submit">
+                                        <span class="">HELP US UNDERSTAND THE PROBLEM</span>
+                                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                    </button>
+                                    <!-- WhatsApp Alternative -->
+                                    <div class="text-center pt-1">
+                                        <a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-semibold hover:text-secondary-container transition-colors"
+                                            href="https://wa.me/918017054000?text=Hi%20MACJ,%20I%20have%20a%20moisture%20issue%20in%20my%20property%20and%20want%20to%20share%20photos"
+                                            rel="noopener noreferrer" target="_blank">
+                                            <span
+                                                class="material-symbols-outlined text-whatsapp-direct text-[18px]">chat</span>
+                                            <span class="">Prefer WhatsApp? Send Photos Directly (+91 80170 54000)
+                                                →</span>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center gap-1.5 text-center pt-1 text-text-muted">
+                                        <span class="material-symbols-outlined text-[14px]">lock</span>
+                                        <span class="font-body-sm text-[11px]">Strict privacy. No spam. You will speak
+                                            with a trained technical advisor.</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 2: TRUST STRIP
+       ========================================== -->
+            <section class="w-full bg-primary-container text-on-primary py-space-md shadow-inner">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-card/10 flex items-center justify-center shrink-0">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[22px]">domain_verification</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[15px] font-bold text-on-primary">8,000+ Inspections
+                                </h4>
+                                <p class="font-body-sm text-[12px] text-on-primary-container leading-snug mt-0.5">
+                                    Experience built on real-world defects across all Indian construction standards.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-card/10 flex items-center justify-center shrink-0">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[22px]">location_city</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[15px] font-bold text-on-primary">8+ Major Indian
+                                    Cities</h4>
+                                <p class="font-body-sm text-[12px] text-on-primary-container leading-snug mt-0.5">Local
+                                    diagnostic engineers stationed across Kolkata, Mumbai, NCR, Bengaluru &amp; more.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-card/10 flex items-center justify-center shrink-0">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[22px]">engineering</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[15px] font-bold text-on-primary">Field-Tested
+                                    Engineers</h4>
+                                <p class="font-body-sm text-[12px] text-on-primary-container leading-snug mt-0.5">
+                                    Calibrated equipment guided by civil engineering logic and structured protocols.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-card/10 flex items-center justify-center shrink-0">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[22px]">thermostat</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[15px] font-bold text-on-primary">Calibrated
+                                    Diagnostics</h4>
+                                <p class="font-body-sm text-[12px] text-on-primary-container leading-snug mt-0.5">
+                                    Pinless moisture profiling &amp; thermography deployed where they add concrete
+                                    proof.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 3: SYMPTOM RECOGNITION (PHOTO GRID)
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <!-- Section Header -->
+                    <div class="text-center max-w-2xl mx-auto mb-space-2xl">
+                        <span
+                            class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">START
+                            WITH WHAT YOU CAN SEE</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mt-1">Does This Look
+                            Familiar?</h2>
+                        <p class="font-body-md text-body-md text-text-muted mt-2">
+                            You do not need to know whether the issue is concealed plumbing, external facade joints, an
+                            upper terrace, or defective waterproofing. Start with what you can see.
+                        </p>
+                    </div>
+                    <!-- 6 Common Symptoms Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+                        <!-- Symptom 1 -->
+                        <div
+                            class="group bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div class="relative h-48 bg-surface-dim overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Close up photograph of a residential interior bedroom wall showing severe dampness, bubbling paint blisters, white efflorescence salt powder, and crumbling plaster near baseboard level"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_0r4up5n4xvfedKvvsq0vKBC_oc2oolywWD2_qt2WLH9H2F876XS8JWuZQVjEbsMC7dNCZyrSNxEJqUn7m6ut_LNGW-3RS6pqTBNmTCxsoF1ZLU_MCdAkEUO2NDCZmHNx7RFOjztuevnDBN-huU6Cuqytkn91DFw_3f2y6KGrkxwqpgAjNLBphC4KPaZb727_-2QKyBSzmzZZjvNz8yi03NfTnfnM37qMUyMmsJ8">
+                                <span
+                                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[11px] font-semibold backdrop-blur">Symptom
+                                    01</span>
+                            </div>
+                            <div class="p-space-md space-y-2">
+                                <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">Damp
+                                    Patches &amp; Peeling Paint</h3>
+                                <p class="font-body-sm text-body-sm text-text-body">Dark moisture stains, blistering
+                                    acrylic emulsion, salt efflorescence, and decaying baseboard plaster on living areas
+                                    or bedrooms.</p>
+                                <div
+                                    class="pt-2 flex items-center text-secondary-container font-label-sm text-label-sm font-semibold">
+                                    <span class="">Possible capillary rise or concealed line</span>
+                                    <span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Symptom 2 -->
+                        <div
+                            class="group bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div class="relative h-48 bg-surface-dim overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Residential apartment false ceiling showing brown water damage stains, soggy gypsum board sagging downwards, and active water droplets forming around a recessed LED spotlight fixture"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoo3-OWekj-YHDkHC_99MJDzJUTQhMXa13Xb2TnftDVyLPuyLPkkS01fHv-S7nHzacTHx0PBc_-nqq6_RWKPb3KXJaPb1orSbMkSjVtwv3ID2lZHNWBFiCqccq-QCYOSF5cWconrMWZavsT1hjTBkysgdfyL5Vl_ZVM-8OjBAssO_mdGilEs33X930m1LSYWpfA0KjtR0_yBGK9wF-_OO1WRbi4T9gwS1lHUV3lXY">
+                                <span
+                                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[11px] font-semibold backdrop-blur">Symptom
+                                    02</span>
+                            </div>
+                            <div class="p-space-md space-y-2">
+                                <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">Ceiling
+                                    Seepage &amp; Dripping</h3>
+                                <p class="font-body-sm text-body-sm text-text-body">Overhead yellow-brown stains, active
+                                    drips, water collecting above false ceilings, or mould forming along the ceiling
+                                    corners.</p>
+                                <div
+                                    class="pt-2 flex items-center text-secondary-container font-label-sm text-label-sm font-semibold">
+                                    <span class="">Upper flat bathroom, duct or slab source</span>
+                                    <span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Symptom 3 -->
+                        <div
+                            class="group bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div class="relative h-48 bg-surface-dim overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Damp wall skirting outside an attached modern bathroom in an Indian apartment, showing blackened wet tile grouts, damp wooden door frame rot, and paint swelling on the hallway partition"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA168xe5TAtPuasGpVLiJQHSbueKpbgrAOch30sGRSmsuzr_e3E8Ua0FGS-PDrigiSMAqLyp_xj0dDyNHgUcwNR-x17sxqO00lOo4wbx-b5n6wSdGCXS5KqAXuBXxUcQNw8D4X8WI8OAxPR_rJBIQeWR2iQaXwpCCjFosJv-Dmg0OUf7c2s5yY90TIzkNgGHbywS0CFbtElEtYMqU8217nrvo_vYyShoNBwJ_CaeU8">
+                                <span
+                                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[11px] font-semibold backdrop-blur">Symptom
+                                    03</span>
+                            </div>
+                            <div class="p-space-md space-y-2">
+                                <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">Bathroom
+                                    &amp; Wet-Area Leaks</h3>
+                                <p class="font-body-sm text-body-sm text-text-body">Wet patches on walls immediately
+                                    adjacent to washrooms, saturated door jambs, or wet skirting outside master
+                                    bathrooms.</p>
+                                <div
+                                    class="pt-2 flex items-center text-secondary-container font-label-sm text-label-sm font-semibold">
+                                    <span class="">Trap joint, sunken slab, or concealed pipe</span>
+                                    <span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Symptom 4 -->
+                        <div
+                            class="group bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div class="relative h-48 bg-surface-dim overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Interior wall corner adjacent to aluminum sliding glass window showing diagonal rain seepage tracks, bubbling paint, water ingress stains after heavy monsoon rain in an urban apartment"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCerfWytyuS4YZmKfTB2t6zFlV1EegiTITjlERqdA1yVGZOlYX0fevUh00gShiGi5MllHdKIM2PVvbDOCS_aPJMFPiFoNpAP_jDWBODNczCI7Ymljh7PBO8Y-cCj9wzM8Wmh7ZFnJ76Yqd-u61XmZ6RcjHQ7F9MO31VIalb4YNJB5ROzNvGuzGqoCHs-AvikvvVW5ObGvjVPix5ua0tPhZpgnLMciWr55WiplGCrqk">
+                                <span
+                                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[11px] font-semibold backdrop-blur">Symptom
+                                    04</span>
+                            </div>
+                            <div class="p-space-md space-y-2">
+                                <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">Facade
+                                    &amp; Window Rain Seepage</h3>
+                                <p class="font-body-sm text-body-sm text-text-body">Dampness appearing primarily during
+                                    or after heavy monsoons around window frames, external sill corners, or building
+                                    joints.</p>
+                                <div
+                                    class="pt-2 flex items-center text-secondary-container font-label-sm text-label-sm font-semibold">
+                                    <span class="">Perimeter sealant failure or crack entry</span>
+                                    <span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Symptom 5 -->
+                        <div
+                            class="group bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div class="relative h-48 bg-surface-dim overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Dense colony of toxic black mould and greenish fungal spores blooming inside an air-conditioned bedroom wardrobe corner on damp plasterboard with high relative humidity"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDei_S3MFao83uN64eC72rRcmfQMpbsE4Y8VdWsMcZzw-wx4V9UAk6q6t52oTvv0IgrsXWI4ZM16npNmJrfmV0_yrUZ2oXNlZaxk4IgM9OX6Chu8kx0uBb82O0qRoTeDv9A3Rx39CiATyLLyoyiwEN8TqjettbBnr5n49nLVmUYn_8uba6HC9vOtwheGwqhSrFWr4K_z2xpNB4GbT75WdMYmrYb6niRO_37n8xBX0Y">
+                                <span
+                                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[11px] font-semibold backdrop-blur">Symptom
+                                    05</span>
+                            </div>
+                            <div class="p-space-md space-y-2">
+                                <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">Mould
+                                    &amp; Dark Fungal Growth</h3>
+                                <p class="font-body-sm text-body-sm text-text-body">Black, green, or powdery colonies
+                                    behind wardrobes, under AC vents, or inside poorly ventilated utility areas.</p>
+                                <div
+                                    class="pt-2 flex items-center text-secondary-container font-label-sm text-label-sm font-semibold">
+                                    <span class="">Thermal bridging or chronic moisture accumulation</span>
+                                    <span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Symptom 6 -->
+                        <div
+                            class="group bg-surface-card rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div class="relative h-48 bg-surface-dim overflow-hidden">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    data-alt="Freshly repainted luxury living room wall where old damp stains and paint blistering are reappearing through new waterproofing paint within two months of renovation"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDby5zgwgkLrPTkRmuS6I83ZUrRjIU_CFhVSGhIoa-KbgkdqXm09lXRA5FOp1YcPOdQdzfT4NKu4KOrTDT5FQPIoOQRzx6UmYQEQNiCytSD7B8yA5P_Of0JHMCJZ3MYYydKW1POCnRQWOPhUUcQ26r8Q9n1o1gsBEUBNWe_ynyh5fMVy3E2kA_XHWqgSozNvIsCROYvHSZpSz9UOdTtrVzvOtmFRilDntc3M3tIh2A">
+                                <span
+                                    class="absolute top-3 left-3 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[11px] font-semibold backdrop-blur">Symptom
+                                    06</span>
+                            </div>
+                            <div class="p-space-md space-y-2">
+                                <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">Recurring
+                                    Repaired Dampness</h3>
+                                <p class="font-body-sm text-body-sm text-text-body">Moisture and peeling repainting that
+                                    returned within 3-6 months despite spending on waterproof coatings or exploratory
+                                    plumbing fixes.</p>
+                                <div
+                                    class="pt-2 flex items-center text-secondary-container font-label-sm text-label-sm font-semibold">
+                                    <span class="">Source remained unaddressed during repair</span>
+                                    <span class="material-symbols-outlined text-[16px] ml-1">chevron_right</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Emphasized Core Insight Callout Box -->
+                    <div
+                        class="mt-space-xl p-space-lg rounded-2xl bg-primary-container text-on-primary flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-lg">
+                        <div class="flex items-center gap-space-md">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-secondary-container flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[32px] text-on-secondary">lightbulb</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-md text-headline-md font-bold text-on-primary">The visible damp
+                                    is the affected area — not necessarily the source.</h4>
+                                <p class="font-body-sm text-body-sm text-on-primary-container mt-1 max-w-xl">
+                                    Water obeys gravity and follows structural capillaries. A damp spot on your living
+                                    room wall might originate from an unsealed AC condensate line on the floor above.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0 w-full sm:w-auto">
+                            <a class="w-full sm:w-auto px-space-md py-3 rounded-lg bg-secondary-container hover:bg-brand-accent-hover text-on-secondary font-label-md text-label-md font-semibold text-center transition-all shadow-sm"
+                                href="#hero-diagnostic-form">
+                                SHOW US THE PROBLEM →
+                            </a>
+                            <a class="w-full sm:w-auto px-space-md py-3 rounded-lg bg-whatsapp-direct hover:opacity-95 text-on-secondary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-all shadow-sm"
+                                href="https://wa.me/918017054000?text=Hi%20MACJ,%20I%20want%20to%20share%20photos%20of%20a%20leakage"
+                                rel="noopener noreferrer" target="_blank">
+                                <span class="material-symbols-outlined text-[18px]">chat</span>
+                                <span class="">WHATSAPP PHOTOS →</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 4: WHY THE SOURCE MATTERS & TECHNICAL PATHWAY
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface-subtle">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <!-- Section Header -->
+                    <div class="max-w-3xl mb-space-2xl">
+                        <span
+                            class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">SOURCE-FIRST
+                            DIAGNOSIS</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mt-1">Do Not Repair the
+                            Patch Before You Understand the Path.</h2>
+                        <p class="font-body-md text-body-md text-text-body mt-2 leading-relaxed">
+                            Water does not travel in straight lines through concrete. Water enters at a pinhole leak, an
+                            unsealed tile grout, an external expansion crack, or a terrace drain junction, then flows
+                            laterally along slab contours, through electrical conduits, or down masonry pores before
+                            manifesting meters away.
+                        </p>
+                    </div>
+                    <!-- Architectural Pathway Diagram -->
+                    <div class="bg-surface-card rounded-2xl p-space-lg shadow-sm mb-space-2xl">
+                        <div class="flex items-center justify-between border-b pb-space-sm mb-space-md">
+                            <span
+                                class="font-headline-sm text-headline-sm text-primary-container font-bold flex items-center gap-2">
+                                <span class="material-symbols-outlined text-secondary-container">route</span>
+                                The Mechanics of Concealed Moisture Migration
+                            </span>
+                            <span class="text-[12px] font-mono text-text-muted">DIAGNOSTIC SCHEMATIC</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md relative">
+                            <!-- Box 1 -->
+                            <div class="p-space-md rounded-xl bg-surface-subtle">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary flex items-center justify-center font-bold text-headline-sm mb-space-xs">
+                                    01
+                                </div>
+                                <h4 class="font-headline-sm text-[16px] text-primary-container font-bold">Point of
+                                    Ingress / Concealed Service</h4>
+                                <p class="font-body-sm text-[13px] text-text-muted mt-1 leading-relaxed">
+                                    Unsealed pipe junction, cracked shower pan waterproofing, terrace parapet flashing,
+                                    or external rain-facing lintel crack.
+                                </p>
+                            </div>
+                            <!-- Flow Indicator 1 -> 2 (Desktop Arrow) -->
+                            <div
+                                class="hidden md:flex absolute top-1/2 left-[31.5%] -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-primary-container text-on-primary items-center justify-center shadow">
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </div>
+                            <!-- Box 2 -->
+                            <div class="p-space-md rounded-xl bg-primary-container text-on-primary">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-surface-card/20 text-on-primary flex items-center justify-center font-bold text-headline-sm mb-space-xs">
+                                    02
+                                </div>
+                                <h4 class="font-headline-sm text-[16px] text-on-primary font-bold">Concealed Lateral
+                                    Migration</h4>
+                                <p class="font-body-sm text-[13px] text-on-primary-container mt-1 leading-relaxed">
+                                    Moisture follows structural gradients across sunken slabs, hollow block courses,
+                                    pipe shafts, and rebar channels without surfacing.
+                                </p>
+                            </div>
+                            <!-- Flow Indicator 2 -> 3 (Desktop Arrow) -->
+                            <div
+                                class="hidden md:flex absolute top-1/2 left-[65%] -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-primary-container text-on-primary items-center justify-center shadow">
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                            </div>
+                            <!-- Box 3 -->
+                            <div class="p-space-md rounded-xl bg-surface-subtle">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-status-warning text-on-primary flex items-center justify-center font-bold text-headline-sm mb-space-xs">
+                                    03
+                                </div>
+                                <h4 class="font-headline-sm text-[16px] text-primary-container font-bold">Visible
+                                    Symptom / Damp Patch</h4>
+                                <p class="font-body-sm text-[13px] text-text-muted mt-1 leading-relaxed">
+                                    Moisture finally bleeds out through plaster, bubbling interior paint, triggering
+                                    mould or dripping onto your ceiling meters away.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Consequence Comparison Table -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg mb-space-2xl">
+                        <!-- Symptom-Only Repair (Negative) -->
+                        <div class="p-space-lg rounded-xl bg-error-container/20 space-y-space-md">
+                            <div class="flex items-center gap-2 text-error">
+                                <span class="material-symbols-outlined text-[24px]">cancel</span>
+                                <h3 class="font-headline-sm text-headline-sm font-bold">Symptom-Only Approach (Trial
+                                    &amp; Error)</h3>
+                            </div>
+                            <ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-error font-bold">×</span>
+                                    <span class=""><strong>Repairing the wrong spot:</strong> Repainting or
+                                        waterproofing over the visible damp while moisture continues entering behind
+                                        it.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-error font-bold">×</span>
+                                    <span class=""><strong>Blind breaking of tiles &amp; walls:</strong> Contractors
+                                        guessing where a concealed pipe might leak, breaking expensive marble or tiles
+                                        unnecessarily.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-error font-bold">×</span>
+                                    <span class=""><strong>Compounding financial expenditure:</strong> Multiple
+                                        contractor visits, multiple coats of chemical waterproofing, yet dampness
+                                        returns every monsoon.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Source-First Diagnosis (Positive) -->
+                        <div class="p-space-lg rounded-xl bg-surface-card shadow-sm space-y-space-md">
+                            <div class="flex items-center gap-2 text-whatsapp-direct">
+                                <span class="material-symbols-outlined text-[24px]">check_circle</span>
+                                <h3 class="font-headline-sm text-headline-sm font-bold text-primary-container">
+                                    Source-First MACJ Diagnosis</h3>
+                            </div>
+                            <ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-secondary-container font-bold">✓</span>
+                                    <span class=""><strong>Evidence-driven target:</strong> Non-destructive thermal
+                                        scans and moisture mapping outline the actual moisture migration plume.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-secondary-container font-bold">✓</span>
+                                    <span class=""><strong>Protects costly finishes:</strong> Isolate the pinpoint area
+                                        before allowing any hammer or chisel to touch your flooring or walls.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-secondary-container font-bold">✓</span>
+                                    <span class=""><strong>Longer-lasting repairs:</strong> Hand the contractor a
+                                        concrete diagnostic scope specifying the exact defect to fix once and for
+                                        all.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Where Could the Moisture Be Coming From? (2-Col Checklist) -->
+                    <div class="bg-surface-card rounded-2xl p-space-lg shadow-sm">
+                        <h3 class="font-headline-md text-headline-md text-primary-container font-bold mb-space-sm">
+                            Where Could the Moisture Be Coming From?
+                        </h3>
+                        <p class="font-body-sm text-body-sm text-text-muted mb-space-md">
+                            Field inspections repeatedly prove that what looks like simple wall damp can stem from
+                            multiple concealed building systems:
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+                            <div class="flex items-center gap-2.5 p-2 rounded bg-surface-subtle">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[20px]">plumbing</span>
+                                <span class="font-label-md text-label-md text-text-primary">Concealed Plumbing
+                                    Lines</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-2 rounded bg-surface-subtle">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[20px]">bathtub</span>
+                                <span class="font-label-md text-label-md text-text-primary">Bathrooms &amp; Sunken
+                                    Slabs</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-2 rounded bg-surface-subtle">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[20px]">domain</span>
+                                <span class="font-label-md text-label-md text-text-primary">External Wall Facades</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-2 rounded bg-surface-subtle">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[20px]">window</span>
+                                <span class="font-label-md text-label-md text-text-primary">Window Sills &amp; Perimeter
+                                    Joints</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-2 rounded bg-surface-subtle">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[20px]">roofing</span>
+                                <span class="font-label-md text-label-md text-text-primary">Terraces &amp; Parapet
+                                    Cappings</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-2 rounded bg-surface-subtle">
+                                <span class="material-symbols-outlined text-secondary-container text-[20px]">deck</span>
+                                <span class="font-label-md text-label-md text-text-primary">Balconies &amp; Adjoining
+                                    Units</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-2 rounded bg-surface-subtle">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[20px]">vertical_align_center</span>
+                                <span class="font-label-md text-label-md text-text-primary">Service Ducts &amp; Pipe
+                                    Shafts</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-2 rounded bg-surface-subtle">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container text-[20px]">ac_unit</span>
+                                <span class="font-label-md text-label-md text-text-primary">Concealed AC Drain
+                                    Lines</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Persistent Damp Information Block (Calm, Scientific) -->
+                    <div class="mt-space-xl p-space-lg rounded-2xl bg-surface-card shadow-sm">
+                        <div class="max-w-2xl mb-space-md">
+                            <span
+                                class="font-eyebrow-badge text-eyebrow-badge uppercase text-text-muted font-bold tracking-wider">TECHNICAL
+                                IMPACT DISCLOSURE</span>
+                            <h4 class="font-headline-sm text-headline-sm text-primary-container font-bold mt-1">Why
+                                Persistent Dampness Deserves Systematic Attention</h4>
+                            <p class="font-body-sm text-body-sm text-text-muted">A calm, scientific review of what
+                                chronic concealed moisture causes over time.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+                            <!-- Property & Finishes -->
+                            <div class="p-space-md rounded-xl bg-surface-subtle space-y-2">
+                                <div class="flex items-center gap-2 text-primary-container">
+                                    <span class="material-symbols-outlined text-secondary-container">foundation</span>
+                                    <h5 class="font-headline-sm text-[16px] font-bold">Property &amp; Interior Finishes
+                                    </h5>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-text-body leading-relaxed">
+                                    Unchecked moisture causes permanent delamination of plaster, warping of expensive
+                                    Italian marble, rotting of customized woodwork, structural rusting of embedded steel
+                                    rebar (spalling), and endless repetitive repainting bills.
+                                </p>
+                            </div>
+                            <!-- Indoor Environment -->
+                            <div class="p-space-md rounded-xl bg-surface-subtle space-y-2">
+                                <div class="flex items-center gap-2 text-primary-container">
+                                    <span class="material-symbols-outlined text-secondary-container">air</span>
+                                    <h5 class="font-headline-sm text-[16px] font-bold">Indoor Environment &amp; Air
+                                        Quality</h5>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-text-body leading-relaxed">
+                                    High relative humidity inside walls fosters microbial colonies, fungal spores, and
+                                    heavy musty smells, which recirculate via air conditioning systems and can aggravate
+                                    sensitivities in young children or elderly family members.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-center font-medium text-primary mt-space-md italic">
+                            "Persistent moisture deserves attention because it can affect both the property's structural
+                            integrity and the indoor living environment."
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 5: 3D DIAGNOSTIC METHOD (SIGNATURE BRANDED FLOW)
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <!-- Section Header -->
+                    <div class="text-center max-w-3xl mx-auto mb-space-2xl">
+                        <span
+                            class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">HOW
+                            MACJ INVESTIGATES</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mt-1">From Symptom to
+                            Source: Our 3D Diagnostic Approach</h2>
+                        <p class="font-body-md text-body-md text-text-muted mt-2">
+                            We first understand the history of the issue — when it appears, whether it alters with
+                            rainfall or plumbing usage, and what prior repairs took place. We then apply our systematic
+                            3D framework:
+                        </p>
+                    </div>
+                    <!-- 3D Steps Flow Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+                        <!-- Step 1: DETECT -->
+                        <div
+                            class="relative bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center font-display text-[22px] font-bold mb-space-sm">
+                                01
+                            </div>
+                            <span
+                                class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-wider">STAGE
+                                01</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container font-bold mt-1">DETECT
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-text-body mt-2 leading-relaxed">
+                                Inspect affected and relevant surrounding zones. Take quantitative moisture readings
+                                using pinless high-frequency capacitance sensors, and deploy calibrated thermal imaging
+                                cameras where useful to map evaporative cooling patterns.
+                            </p>
+                            <div class="mt-space-md pt-space-sm border-t">
+                                <span class="font-label-sm text-[12px] font-semibold text-text-muted uppercase">Tools
+                                    Used:</span>
+                                <p class="font-body-sm text-[13px] text-primary-container font-medium mt-0.5">
+                                    High-frequency moisture meters, thermal imagers, humidity sensors.</p>
+                            </div>
+                        </div>
+                        <!-- Step 2: DESCRIBE -->
+                        <div
+                            class="relative bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary flex items-center justify-center font-display text-[22px] font-bold mb-space-sm">
+                                02
+                            </div>
+                            <span
+                                class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-wider">STAGE
+                                02</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container font-bold mt-1">DESCRIBE
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-text-body mt-2 leading-relaxed">
+                                Correlate physical evidence, building architectural layout, plumbing routing, and site
+                                conditions. We describe the probable moisture entry pathway and contributing structural
+                                factors to the exact level supported by concrete findings.
+                            </p>
+                            <div class="mt-space-md pt-space-sm border-t">
+                                <span class="font-label-sm text-[12px] font-semibold text-text-muted uppercase">Process
+                                    Used:</span>
+                                <p class="font-body-sm text-[13px] text-primary-container font-medium mt-0.5">
+                                    Architectural correlation, pressure checks, thermal gradient analysis.</p>
+                            </div>
+                        </div>
+                        <!-- Step 3: DIRECT -->
+                        <div
+                            class="relative bg-surface-card rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center font-display text-[22px] font-bold mb-space-sm">
+                                03
+                            </div>
+                            <span
+                                class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-wider">STAGE
+                                03</span>
+                            <h3 class="font-headline-md text-headline-md text-primary-container font-bold mt-1">DIRECT
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-text-body mt-2 leading-relaxed">
+                                Recommend the appropriate targeted repair or corrective direction. Provide your
+                                contractor with clarity on what to fix, whether further specialist pressure-testing is
+                                needed, or what areas require ongoing monitoring.
+                            </p>
+                            <div class="mt-space-md pt-space-sm border-t">
+                                <span
+                                    class="font-label-sm text-[12px] font-semibold text-text-muted uppercase">Deliverable:</span>
+                                <p class="font-body-sm text-[13px] text-primary-container font-medium mt-0.5">Defect
+                                    scope, photo evidence sheet, non-destructive repair pathway.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Golden Rule Banner -->
+                    <div
+                        class="mt-space-xl p-space-md rounded-xl bg-surface-container flex items-center justify-center gap-space-sm text-center">
+                        <span class="material-symbols-outlined text-secondary-container text-[24px]">verified</span>
+                        <p class="font-headline-sm text-[16px] text-primary-container font-bold">
+                            "Technology gives us data. Experience helps connect the evidence."
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 6: 3L REPAIR OBJECTIVES
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface-subtle">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <!-- Section Header -->
+                    <div class="text-center max-w-2xl mx-auto mb-space-2xl">
+                        <span
+                            class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">REPAIR
+                            OBJECTIVES</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mt-1">3Ds Guide the
+                            Diagnosis. 3Ls Guide the Repair.</h2>
+                        <p class="font-body-md text-body-md text-text-muted mt-2">
+                            By isolating the source before engaging waterproofing contractors or plumbers, you aim for 3
+                            concrete practical outcomes:
+                        </p>
+                    </div>
+                    <!-- 3 Premium Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+                        <div class="bg-surface-card rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center mb-space-md">
+                                    <span class="material-symbols-outlined text-[26px]">savings</span>
+                                </div>
+                                <h3 class="font-headline-md text-headline-md text-primary-container font-bold">Lower
+                                    Avoidable Cost</h3>
+                                <p class="font-body-md text-body-md text-text-body mt-2 leading-relaxed">
+                                    Focus costly civil and waterproofing work on confirmed evidence-supported zones,
+                                    drastically reducing trial-and-error attempts that drain your budget without curing
+                                    the leak.
+                                </p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm border-t">
+                                <span class="font-label-sm text-[12px] text-text-muted">Target: Eliminate redundant
+                                    re-plastering bills</span>
+                            </div>
+                        </div>
+                        <div class="bg-surface-card rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-secondary-container/10 text-secondary-container flex items-center justify-center mb-space-md">
+                                    <span class="material-symbols-outlined text-[26px]">handyman</span>
+                                </div>
+                                <h3 class="font-headline-md text-headline-md text-primary-container font-bold">Less
+                                    Unnecessary Breaking</h3>
+                                <p class="font-body-md text-body-md text-text-body mt-2 leading-relaxed">
+                                    Narrow the intervention zone before opening finished surfaces, tiles, or false
+                                    ceilings — avoiding massive structural disruption whenever access and findings
+                                    allow.
+                                </p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm border-t">
+                                <span class="font-label-sm text-[12px] text-text-muted">Target: Preserve intact marble,
+                                    tiles &amp; cabinetry</span>
+                            </div>
+                        </div>
+                        <div class="bg-surface-card rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-whatsapp-direct/10 text-whatsapp-direct flex items-center justify-center mb-space-md">
+                                    <span class="material-symbols-outlined text-[26px]">verified_user</span>
+                                </div>
+                                <h3 class="font-headline-md text-headline-md text-primary-container font-bold">
+                                    Longer-Lasting Outcomes</h3>
+                                <p class="font-body-md text-body-md text-text-body mt-2 leading-relaxed">
+                                    Direct repairs at the moisture entry point rather than slapping superficial sealants
+                                    over the damp patch, establishing genuine long-term durability against return.
+                                </p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm border-t">
+                                <span class="font-label-sm text-[12px] text-text-muted">Target: Permanent resolution
+                                    across monsoon cycles</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center font-body-sm text-[12px] text-text-muted italic mt-space-md">
+                        * Note: These are the fundamental objectives of a source-first diagnostic approach; outcomes
+                        depend on site accessibility, structural complexity, and physical findings.
+                    </p>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 7: PROBLEMS & PROPERTY TYPES
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <div class="text-center max-w-2xl mx-auto mb-space-2xl">
+                        <span
+                            class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">DIAGNOSTIC
+                            CAPABILITY</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mt-1">Inspected Across
+                            Diverse Property Types</h2>
+                        <p class="font-body-md text-body-md text-text-muted mt-2">
+                            From compact studio apartments to multi-acre industrial plants, our diagnostic protocols
+                            scale seamlessly.
+                        </p>
+                    </div>
+                    <!-- Scopes Matrix -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md mb-space-xl">
+                        <div class="p-space-md rounded-xl bg-surface-card shadow-sm flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-subtle text-primary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">shower</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[16px] font-bold text-primary-container">Sunken
+                                    Bathroom Slabs</h4>
+                                <p class="font-body-sm text-[13px] text-text-muted mt-1 leading-snug">Trapped drainage
+                                    leaks, failed grouts, toilet pan connector failure, and riser leaks.</p>
+                            </div>
+                        </div>
+                        <div class="p-space-md rounded-xl bg-surface-card shadow-sm flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-subtle text-primary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">apartment</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[16px] font-bold text-primary-container">Building
+                                    Facades &amp; Expansion Joints</h4>
+                                <p class="font-body-sm text-[13px] text-text-muted mt-1 leading-snug">Wind-driven rain
+                                    seepage, cracked plaster bands, and failed architectural sealants.</p>
+                            </div>
+                        </div>
+                        <div class="p-space-md rounded-xl bg-surface-card shadow-sm flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-subtle text-primary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">wb_sunny</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[16px] font-bold text-primary-container">Terraces &amp;
+                                    Roof Drainage</h4>
+                                <p class="font-body-sm text-[13px] text-text-muted mt-1 leading-snug">Ponding water,
+                                    unsealed rainwater khurras, parapet flashing tears, and solar mounts.</p>
+                            </div>
+                        </div>
+                        <div class="p-space-md rounded-xl bg-surface-card shadow-sm flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-subtle text-primary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">air</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[16px] font-bold text-primary-container">AC Ducting
+                                    &amp; Condensate Runoff</h4>
+                                <p class="font-body-sm text-[13px] text-text-muted mt-1 leading-snug">Concealed
+                                    uninsulated VRV/split AC drains leaking directly into masonry voids.</p>
+                            </div>
+                        </div>
+                        <div class="p-space-md rounded-xl bg-surface-card shadow-sm flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-subtle text-primary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">vertical_split</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[16px] font-bold text-primary-container">Internal
+                                    Service Shafts</h4>
+                                <p class="font-body-sm text-[13px] text-text-muted mt-1 leading-snug">Stack pipe joint
+                                    leaks, vertical duct dampness, and sewer line seepage between floors.</p>
+                            </div>
+                        </div>
+                        <div class="p-space-md rounded-xl bg-surface-card shadow-sm flex items-start gap-3">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-surface-subtle text-primary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">warehouse</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-[16px] font-bold text-primary-container">Basements
+                                    &amp; Retaining Walls</h4>
+                                <p class="font-body-sm text-[13px] text-text-muted mt-1 leading-snug">High hydrostatic
+                                    groundwater pressure seepage, cold joints, and retaining wall damp.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Types Badges Strip -->
+                    <div
+                        class="p-space-md rounded-xl bg-surface-subtle flex flex-wrap items-center justify-center gap-space-sm text-center">
+                        <span
+                            class="font-label-sm text-[12px] uppercase tracking-wider text-text-muted font-bold mr-2">Inspected
+                            Property Categories:</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-surface-card font-label-sm text-label-sm text-text-primary shadow-xs">High-Rise
+                            Apartments</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-surface-card font-label-sm text-label-sm text-text-primary shadow-xs">Independent
+                            Bungalows</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-surface-card font-label-sm text-label-sm text-text-primary shadow-xs">Corporate
+                            Offices</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-surface-card font-label-sm text-label-sm text-text-primary shadow-xs">Luxury
+                            Hotels</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-surface-card font-label-sm text-label-sm text-text-primary shadow-xs">Retail
+                            Showrooms</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-surface-card font-label-sm text-label-sm text-text-primary shadow-xs">Hospitals
+                            &amp; Clinics</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-surface-card font-label-sm text-label-sm text-text-primary shadow-xs">RWA
+                            / Society Common Ducts</span>
+                    </div>
+                    <!-- Transparent Scope Limitation Disclaimer -->
+                    <div class="mt-space-md p-space-sm bg-surface-card rounded-lg text-center">
+                        <p class="font-body-sm text-[12px] text-text-muted leading-relaxed">
+                            <strong>Diagnostic Protocol Scope:</strong> Inspection is strictly limited to agreed areas
+                            and physically accessible locations on site. In intermittent or deeply embedded plumbing
+                            issues, additional upper-floor access, pressure testing, or selective exploratory opening
+                            may be advised to fully confirm root-cause.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 8: REAL DIAGNOSTIC CASE EVIDENCE (MANDIR CASE)
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface-subtle">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <!-- Section Header -->
+                    <div class="max-w-3xl mb-space-2xl">
+                        <span
+                            class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">REAL
+                            DIAGNOSTIC EVIDENCE</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mt-1">Show How We Diagnose —
+                            Not Just What We Claim.</h2>
+                        <p class="font-body-lg text-body-lg text-text-body mt-2">
+                            <strong>Case Record #7842:</strong> 5th-Floor Mandir Ceiling &amp; Woodwork Seepage Traced
+                            to a 6th-Floor Concealed AC Drain Pipe.
+                        </p>
+                    </div>
+                    <!-- 3 Connected Evidence Stages -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+                        <!-- Stage 1 Card -->
+                        <div
+                            class="bg-surface-card rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="relative h-56 bg-surface-dim">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Interior luxury apartment mandir prayer area ceiling showing severe water damage, dark damp contours, ruined carved teak woodwork, and peeling gypsum paint on the ceiling slab"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaM9AGZH0-nQarJmrz9hyuOeHHdbS-ru7MGumyy3x_CcQzrkBlkMdXkcd7Ct542yb6R93WPhKSLpq4rXvnsWzKYD2lOjjUTxK6zX91TROAeUmE7ZkvUN73w6kxLgqJvh4G56d_Gt2tOu9jSNj4_wheIfvLJJkYaAfzt0WZK-awxfAVCQsxAJp2KEmRL_x4kAizbSeDfdGMOrXNa_F1cyn0H4WSOHN2cTQqiokcjjE">
+                                    <span
+                                        class="absolute top-3 left-3 px-3 py-1 rounded bg-secondary-container text-on-secondary font-label-sm text-[11px] font-bold">STAGE
+                                        1: SYMPTOM</span>
+                                </div>
+                                <div class="p-space-md">
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">
+                                        Visible Symptom on 5th Floor</h3>
+                                    <p class="font-body-sm text-body-sm text-text-muted mt-2 leading-relaxed">
+                                        Client experienced recurring damp patches and paint peeling on their newly
+                                        crafted teak wood mandir false ceiling. Two waterproofing contractors had
+                                        recommended breaking open the entire mandir ceiling.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-space-md bg-surface-subtle border-t">
+                                <span class="font-label-sm text-[12px] text-primary-container font-semibold">Initial
+                                    Observation:</span>
+                                <p class="font-body-sm text-[13px] text-text-muted">Water stain active even without
+                                    rainfall.</p>
+                            </div>
+                        </div>
+                        <!-- Stage 2 Card -->
+                        <div
+                            class="bg-surface-card rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="relative h-56 bg-surface-dim">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Technical thermal infrared thermography camera display showing a sharp purple and dark blue cold anomaly plume tracing along a vertical concrete column inside an apartment wall"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAazxB6JWOO9j84KR5S8_-tzRS0sta2C4kdRqMP21FT7YbXT7bXfKFZd1nJO_9WcCxe_6mW8nWAYg5m7vzWhvyjKHWWpBQWahstP4Squ5OMEXeQBORA8fgAN9mx822MiVTZnJTvGlSx0q-o1yD_V1M8E8Tttb1aORQQf6WYXVWkzUC3f5_KrjAKBaOM6exoC7YZLy2MfXRXxijkmjR7UV_HEDCW9RNMp6PY0TrUDwo">
+                                    <span
+                                        class="absolute top-3 left-3 px-3 py-1 rounded bg-primary-container text-on-primary font-label-sm text-[11px] font-bold">STAGE
+                                        2: INVESTIGATION</span>
+                                </div>
+                                <div class="p-space-md">
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">
+                                        Quantitative Data &amp; Scans</h3>
+                                    <p class="font-body-sm text-body-sm text-text-muted mt-2 leading-relaxed">
+                                        Capacitance moisture scanning detected high saturation (94% WME). FLIR infrared
+                                        thermal imaging revealed a distinct vertical cooling thermal plume originating
+                                        from the ceiling beam corner rather than plumbing stacks.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-space-md bg-surface-subtle border-t">
+                                <span class="font-label-sm text-[12px] text-primary-container font-semibold">Diagnostic
+                                    Finding:</span>
+                                <p class="font-body-sm text-[13px] text-text-muted">Moisture ingress originated from the
+                                    floor above.</p>
+                            </div>
+                        </div>
+                        <!-- Stage 3 Card -->
+                        <div
+                            class="bg-surface-card rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="relative h-56 bg-surface-dim">
+                                    <img class="w-full h-full object-cover"
+                                        data-alt="Inspection of 6th-floor apartment utility space revealing an uninsulated PVC air conditioning condensate drain pipe disconnected inside a brick masonry duct cavity"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeb96a0cpJ_rKosMwWkCmLY-Fn6SVYu8RxhvqlXuw1Al9L6mpXTQv6rInYZcC-0nGQovz8asvYyWCGGYyz6VqnRKoCz6LqfSAdBzOS8u6Ft1G7BFPGWp5YVqgULFXfLwSa1sMj-6InMAp2AcDJ-_w8BFdpzlmXZDTGopEt7dMZPNrvpAjJIYMsbqSPGilcJr43jpT1ELqyhzVo6Ts0Rse_9_h3lOTpq5D5tnO2f_4">
+                                    <span
+                                        class="absolute top-3 left-3 px-3 py-1 rounded bg-whatsapp-direct text-on-secondary font-label-sm text-[11px] font-bold">STAGE
+                                        3: CONFIRMED SOURCE</span>
+                                </div>
+                                <div class="p-space-md">
+                                    <h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">
+                                        6th-Floor Concealed AC Drain</h3>
+                                    <p class="font-body-sm text-body-sm text-text-muted mt-2 leading-relaxed">
+                                        With permission, engineers inspected the 6th-floor unit directly overhead. An
+                                        uninsulated, disconnected AC condensate drain pipe was continuously discharging
+                                        water inside a wall void directly above the mandir.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-space-md bg-surface-subtle border-t">
+                                <span class="font-label-sm text-[12px] text-primary-container font-semibold">Corrective
+                                    Direction:</span>
+                                <p class="font-body-sm text-[13px] text-text-muted">Reconnected AC pipe for ₹1,500;
+                                    mandir preserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Case Summary Banner -->
+                    <div
+                        class="mt-space-lg p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+                        <div class="space-y-1">
+                            <span
+                                class="font-label-sm text-[12px] text-secondary-container font-bold uppercase tracking-wider">OUTCOME
+                                DELIVERED</span>
+                            <p class="font-body-sm text-body-sm text-primary-container font-semibold">
+                                Saved the homeowner over ₹1.2 Lakhs in false-ceiling breaking and prevented unnecessary
+                                destructive exploratory digging in the wrong flat.
+                            </p>
+                        </div>
+                        <a class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all whitespace-nowrap"
+                            href="#hero-diagnostic-form">
+                            Diagnose Your Property →
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 9: WHAT YOU RECEIVE (INSPECTION DELIVERABLES)
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+                        <!-- Left Deliverables List -->
+                        <div class="lg:col-span-7 space-y-space-md">
+                            <span
+                                class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">DOCUMENTED
+                                FINDINGS</span>
+                            <h2 class="font-headline-lg text-headline-lg text-primary-container">Clarity Before You
+                                Spend on Repairs.</h2>
+                            <p class="font-body-lg text-body-lg text-text-muted">
+                                The customer leaves with a structured, documented engineering assessment — not a
+                                subjective verbal opinion or an isolated thermal photo.
+                            </p>
+                            <div class="space-y-3 pt-space-xs">
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-subtle">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container mt-0.5 text-[20px]">check_box</span>
+                                    <div>
+                                        <h4 class="font-headline-sm text-[15px] font-bold text-primary-container">
+                                            Affected Areas &amp; Quantitative Moisture Mapping</h4>
+                                        <p class="font-body-sm text-[13px] text-text-muted">Numbered zones detailing
+                                            surface moisture percentages and penetration depths.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-subtle">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container mt-0.5 text-[20px]">check_box</span>
+                                    <div>
+                                        <h4 class="font-headline-sm text-[15px] font-bold text-primary-container">
+                                            Identified or Probable Moisture Ingress Pathway</h4>
+                                        <p class="font-body-sm text-[13px] text-text-muted">Clear technical rationale
+                                            explaining how and why water travels into the affected surfaces.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-subtle">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container mt-0.5 text-[20px]">check_box</span>
+                                    <div>
+                                        <h4 class="font-headline-sm text-[15px] font-bold text-primary-container">Paired
+                                            Visual Photos + Calibrated Thermal Scans</h4>
+                                        <p class="font-body-sm text-[13px] text-text-muted">Side-by-side photographic
+                                            documentation linking infrared thermal gradients to actual wall conditions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-subtle">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container mt-0.5 text-[20px]">check_box</span>
+                                    <div>
+                                        <h4 class="font-headline-sm text-[15px] font-bold text-primary-container">
+                                            Recommended Corrective Scope</h4>
+                                        <p class="font-body-sm text-[13px] text-text-muted">Unbiased guidance on what
+                                            the contractor must fix, avoiding trial-and-error work.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-subtle">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container mt-0.5 text-[20px]">check_box</span>
+                                    <div>
+                                        <h4 class="font-headline-sm text-[15px] font-bold text-primary-container">
+                                            Structured Professional MACJ Diagnostic Report</h4>
+                                        <p class="font-body-sm text-[13px] text-text-muted">A formal digital PDF report
+                                            signed off by a certified diagnostic engineer for your records or society
+                                            discussions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-primary font-semibold italic pt-2">
+                                "So you can make a calculated repair decision instead of relying on contractor
+                                guesswork."
+                            </p>
+                        </div>
+                        <!-- Right Report Mockup Card -->
+                        <div class="lg:col-span-5">
+                            <div
+                                class="bg-surface-card rounded-2xl p-space-lg shadow-xl border-t-4 border-t-primary-container">
+                                <!-- Mock Header -->
+                                <div class="flex items-center justify-between pb-space-sm border-b">
+                                    <div class="flex items-center gap-2">
+                                        <img alt="MACJ Logo" class="h-6 w-auto object-contain"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk_uW8Q7yYWcD-UrlyEJ1XWZW8-uFmzeclZSp-jud6jiIwrghFP2ho_cNOB1wSlwJD6MHmkKA47DsoTtH30B-eCrZpRl5GCV5TthvE4H5DhNg3MYQ5jD6RJiVd8XZa9n1PgcVjhqjkoUaPWUVCo5dAf6VDZ72v03i8X6x_aMsWycohsPWWgjijn121gztqm4sn5uLIbdj779OGQ6NDCstEn--yxy47rIxex2X-o_pTc2Uf7usU10AU">
+                                        <span
+                                            class="font-headline-sm text-[12px] text-primary-container font-bold tracking-tight">DIAGNOSTIC
+                                            AUDIT</span>
+                                    </div>
+                                    <span
+                                        class="font-mono text-[11px] text-secondary-container font-semibold bg-secondary-container/10 px-2 py-0.5 rounded">REPORT
+                                        SAMPLE</span>
+                                </div>
+                                <!-- Mock Report Body -->
+                                <div class="py-space-md space-y-space-sm">
+                                    <div class="grid grid-cols-2 gap-2 text-[12px] bg-surface-subtle p-2.5 rounded-lg">
+                                        <div><span class="text-text-muted">Property:</span> <strong
+                                                class="text-text-primary">4BHK Flat, South Kolkata</strong></div>
+                                        <div><span class="text-text-muted">Audit Date:</span> <strong
+                                                class="text-text-primary">12 Oct 2024</strong></div>
+                                        <div><span class="text-text-muted">Status:</span> <strong
+                                                class="text-secondary-container">Active Seepage Detected</strong></div>
+                                        <div><span class="text-text-muted">Moisture Max:</span> <strong
+                                                class="text-text-primary">96.4% WME</strong></div>
+                                    </div>
+                                    <!-- Thermal Scan vs Visual Visual Mockup -->
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <div class="space-y-1">
+                                            <span class="text-[10px] font-bold text-text-muted uppercase">Digital Visual
+                                                Image</span>
+                                            <div class="h-28 bg-surface-dim rounded-md overflow-hidden">
+                                                <img class="w-full h-full object-cover"
+                                                    data-alt="High resolution inspection digital photograph of ceiling water stain near duct partition wall"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJZgDCf54iIcwrEulKXmb5AxC-9Pou6YXa5hBMLhKMmOmIuHyFCD1XGWE5WtksnOp1-cEtcLJRunJgvYwUX637TLg0raeTWJyCJ4CJ2_VPGmS5sswW9GJjQJIM6jEuWUQ54TqCKt984GeiEi-HYANJLsZUMb9bHo53m49p06uj0x9cO6iegQCGkRi849gZX7u0kzWmFCahuHNfO6p1A1TVcy4D58yV_D7P44myuAI">
+                                            </div>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <span class="text-[10px] font-bold text-text-muted uppercase">FLIR Thermal
+                                                Scan</span>
+                                            <div class="h-28 bg-primary rounded-md overflow-hidden">
+                                                <img class="w-full h-full object-cover"
+                                                    data-alt="Paired FLIR thermal infrared imaging showing distinct cool blue moisture pattern spreading across ceiling concrete slab"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ9tC6pJmCmENkQ1bE1RGv7kxPXCCOe-M6nmvvdicOmv3YOIlmVqIOPCdtStQKuZ57JO2kUox-UiLdIQKWFxbF8UCVyY8ex3lxxgKUd4YYA1DOdJGL_o3h9s2H9stWF11RStWcQIMeeRvV5rPS3dinfxtkCrYv6FV43geF6BDBb0VteeI1fUB3xKhuHP7OM0L4iyBU2VgabLKkhQBazRnc_8rXQDatX8lJ6Jziwqk">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-1 text-[12px] bg-surface-subtle p-2.5 rounded-lg">
+                                        <span class="font-bold text-primary-container block">Engineer Diagnostic
+                                            Assessment:</span>
+                                        <p class="text-text-body text-[11px] leading-tight">
+                                            Moisture plume pattern conforms to drainage pipe trap coupling failure in
+                                            vertical shaft at +1.8m height. Sunken slab waterproofing intact.
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1">
+                                        <div class="flex items-center gap-1.5 text-[11px] text-text-muted">
+                                            <span
+                                                class="material-symbols-outlined text-[16px] text-whatsapp-direct">verified</span>
+                                            <span class="">Certified Inspection Engineer Sign-off</span>
+                                        </div>
+                                        <span class="text-[10px] font-mono text-text-muted">ISO:9001-2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 10: SECONDARY CONVERSION FORM
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-primary-container text-on-primary">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+                        <div class="lg:col-span-6 space-y-space-md">
+                            <span
+                                class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">SCHEDULE
+                                AN AUDIT</span>
+                            <h2 class="font-headline-lg text-headline-lg text-on-primary">Stop Guessing. Get Source
+                                Clarity.</h2>
+                            <p class="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
+                                Our team will first understand your issue, evaluate photos if available, and advise
+                                whether a professional damp / seepage inspection is appropriate for your situation.
+                            </p>
+                            <div class="space-y-space-sm pt-space-xs">
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="w-8 h-8 rounded-full bg-surface-card/10 flex items-center justify-center text-secondary-container shrink-0">
+                                        <span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+                                    </span>
+                                    <span class="font-body-md text-body-md text-surface-subtle">Direct Helpline:
+                                        <strong>+91 80170 54000</strong></span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="w-8 h-8 rounded-full bg-surface-card/10 flex items-center justify-center text-whatsapp-direct shrink-0">
+                                        <span class="material-symbols-outlined text-[18px]">chat</span>
+                                    </span>
+                                    <span class="font-body-md text-body-md text-surface-subtle">WhatsApp Direct Desk for
+                                        Photos &amp; Inquiries</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="w-8 h-8 rounded-full bg-surface-card/10 flex items-center justify-center text-secondary-container shrink-0">
+                                        <span class="material-symbols-outlined text-[18px]">verified</span>
+                                    </span>
+                                    <span class="font-body-md text-body-md text-surface-subtle">100% Unbiased
+                                        Diagnostics — We Do Not Sell Repair Works</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-6">
+                            <div class="bg-surface-card text-on-surface rounded-2xl p-space-lg shadow-2xl">
+                                <h3 class="font-headline-md text-headline-md text-primary-container font-bold mb-1">
+                                    Request an Inspection Assessment</h3>
+                                <p class="font-body-sm text-body-sm text-text-muted mb-space-md">Connect directly with
+                                    our engineering desk.</p>
+                                <form class="space-y-space-sm"
+                                    onsubmit="event.preventDefault(); alert('Request received. Our diagnostic coordinator will contact you shortly.');">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+                                        <div>
+                                            <label
+                                                class="block font-label-sm text-[12px] font-semibold text-text-primary mb-1">Your
+                                                Name</label>
+                                            <input
+                                                class="w-full h-10 px-3 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+                                                placeholder="Full name" required="" type="text">
+                                        </div>
+                                        <div>
+                                            <label
+                                                class="block font-label-sm text-[12px] font-semibold text-text-primary mb-1">Mobile
+                                                / WhatsApp</label>
+                                            <input
+                                                class="w-full h-10 px-3 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+                                                pattern="[6-9][0-9]{9}" placeholder="10-digit number" required=""
+                                                type="tel">
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+                                        <div>
+                                            <label
+                                                class="block font-label-sm text-[12px] font-semibold text-text-primary mb-1">City</label>
+                                            <select
+                                                class="w-full h-10 px-3 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+                                                required="">
+                                                <option disabled="" selected="" value="">Select City</option>
+                                                <option value="Kolkata">Kolkata</option>
+                                                <option value="Mumbai">Mumbai</option>
+                                                <option value="Delhi NCR">Delhi NCR</option>
+                                                <option value="Bengaluru">Bengaluru</option>
+                                                <option value="Pune">Pune</option>
+                                                <option value="Chennai">Chennai</option>
+                                                <option value="Hyderabad">Hyderabad</option>
+                                                <option value="Ahmedabad">Ahmedabad</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label
+                                                class="block font-label-sm text-[12px] font-semibold text-text-primary mb-1">Symptom
+                                                Observed</label>
+                                            <select
+                                                class="w-full h-10 px-3 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+                                                required="">
+                                                <option disabled="" selected="" value="">Select Symptom</option>
+                                                <option value="Damp Wall">Damp Wall / Blistering Paint</option>
+                                                <option value="Ceiling Leak">Ceiling Seepage / Stains</option>
+                                                <option value="Bathroom Leak">Bathroom / Toilet Area</option>
+                                                <option value="Rain Ingress">Rain Seepage (Windows/Walls)</option>
+                                                <option value="Recurring">Recurring Problem After Repair</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label
+                                            class="block font-label-sm text-[12px] font-semibold text-text-primary mb-1">Brief
+                                            Description (Optional)</label>
+                                        <textarea
+                                            class="w-full p-2.5 bg-surface-subtle text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+                                            placeholder="e.g. 4th-floor ceiling wet spot near duct wall..."
+                                            rows="2"></textarea>
+                                    </div>
+                                    <button
+                                        class="w-full py-3 rounded-lg bg-secondary-container hover:bg-brand-accent-hover text-on-secondary font-headline-sm text-[15px] font-bold tracking-wide shadow-md transition-all"
+                                        type="submit">
+                                        SUBMIT FOR DIAGNOSTIC EVALUATION
+                                    </button>
+                                    <div class="text-center pt-1">
+                                        <a class="font-label-sm text-[12px] text-whatsapp-direct font-bold hover:underline"
+                                            href="https://wa.me/918017054000" rel="noopener noreferrer" target="_blank">
+                                            Or Click Here to Connect Instantly via WhatsApp →
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 11: ACCORDION FAQS (8 APPROVED QUESTIONS)
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface">
+                <div class="max-w-[900px] mx-auto px-gutter">
+                    <!-- Section Header -->
+                    <div class="text-center mb-space-2xl">
+                        <span
+                            class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">TRANSPARENT
+                            ANSWERS</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary-container mt-1">Frequently Asked
+                            Questions</h2>
+                        <p class="font-body-md text-body-md text-text-muted mt-2">
+                            Clear, honest, non-exaggerated answers to common diagnostic questions.
+                        </p>
+                    </div>
+                    <!-- FAQ Accordion Stack -->
+                    <div class="space-y-space-sm" id="faq-accordion-container">
+                        <!-- FAQ 1 -->
+                        <div class="bg-surface-card rounded-xl shadow-xs overflow-hidden">
+                            <button
+                                class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-sm focus:outline-none"
+                                type="button">
+                                <span class="font-headline-sm text-[16px] font-bold text-primary-container">1. Can
+                                    thermal imaging find a leakage without breaking walls?</span>
+                                <span
+                                    class="material-symbols-outlined text-secondary-container transition-transform duration-200">add</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md pb-space-md pt-0 text-text-body font-body-sm text-body-sm leading-relaxed border-t border-surface-subtle">
+                                Thermal imaging does not "see through walls" like an X-ray; instead, it detects subtle
+                                surface temperature variations caused by evaporative cooling where moisture is present.
+                                Combined with high-frequency capacitive moisture sensors, this non-destructive method
+                                helps outline moisture patterns and trace pathways without opening finishes. However,
+                                thermal imaging is a diagnostic tool, not magic — physical correlation and experience
+                                are essential to interpret what the thermal pattern truly represents.
+                            </div>
+                        </div>
+                        <!-- FAQ 2 -->
+                        <div class="bg-surface-card rounded-xl shadow-xs overflow-hidden">
+                            <button
+                                class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-sm focus:outline-none"
+                                type="button">
+                                <span class="font-headline-sm text-[16px] font-bold text-primary-container">2. Do you
+                                    inspect only the visible damp patch?</span>
+                                <span
+                                    class="material-symbols-outlined text-secondary-container transition-transform duration-200">add</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md pb-space-md pt-0 text-text-body font-body-sm text-body-sm leading-relaxed border-t border-surface-subtle">
+                                No. Inspecting only the damp patch is where conventional repairs fail. We evaluate the
+                                affected area, the adjoining walls, reverse sides of partition walls, plumbing shafts,
+                                overhead slabs, external facades, and relevant upper-floor wet areas where access is
+                                available. Moisture travels, so the inspection must look beyond the symptom.
+                            </div>
+                        </div>
+                        <!-- FAQ 3 -->
+                        <div class="bg-surface-card rounded-xl shadow-xs overflow-hidden">
+                            <button
+                                class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-sm focus:outline-none"
+                                type="button">
+                                <span class="font-headline-sm text-[16px] font-bold text-primary-container">3. Can MACJ
+                                    identify the source in most cases?</span>
+                                <span
+                                    class="material-symbols-outlined text-secondary-container transition-transform duration-200">add</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md pb-space-md pt-0 text-text-body font-body-sm text-body-sm leading-relaxed border-t border-surface-subtle">
+                                In the vast majority of residential and commercial properties, our systematic 3D
+                                approach identifies the primary source or the most probable moisture pathway. However,
+                                in complex structures, multi-layered concealed plumbing, or intermittent rain-related
+                                issues, full confirmation may require testing over time, adjoining unit access, or
+                                controlled exploratory intervention. We provide realistic clarity based on evidence
+                                rather than unfounded guarantees.
+                            </div>
+                        </div>
+                        <!-- FAQ 4 -->
+                        <div class="bg-surface-card rounded-xl shadow-xs overflow-hidden">
+                            <button
+                                class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-sm focus:outline-none"
+                                type="button">
+                                <span class="font-headline-sm text-[16px] font-bold text-primary-container">4. How is
+                                    this different from calling a plumber or waterproofing contractor?</span>
+                                <span
+                                    class="material-symbols-outlined text-secondary-container transition-transform duration-200">add</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md pb-space-md pt-0 text-text-body font-body-sm text-body-sm leading-relaxed border-t border-surface-subtle">
+                                Plumbers and waterproofing contractors are repair executors. They often start by
+                                guessing, breaking tiles, or applying specific chemical treatments they sell. MACJ is a
+                                third-party diagnostic institution: we use scientific instruments to pinpoint the defect
+                                first. You take our documented findings to your chosen contractor so they perform
+                                targeted repairs without unnecessary breaking or overselling.
+                            </div>
+                        </div>
+                        <!-- FAQ 5 -->
+                        <div class="bg-surface-card rounded-xl shadow-xs overflow-hidden">
+                            <button
+                                class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-sm focus:outline-none"
+                                type="button">
+                                <span class="font-headline-sm text-[16px] font-bold text-primary-container">5. Does MACJ
+                                    also undertake damp / waterproofing repair work?</span>
+                                <span
+                                    class="material-symbols-outlined text-secondary-container transition-transform duration-200">add</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md pb-space-md pt-0 text-text-body font-body-sm text-body-sm leading-relaxed border-t border-surface-subtle">
+                                No. MACJ maintains strict diagnostic independence. We do not sell waterproofing
+                                chemicals, we do not undertake repair contracts, and we do not accept commissions from
+                                contractors. This ensures our diagnostic reports are 100% unbiased, objective, and
+                                solely focused on identifying the truth of your property's condition.
+                            </div>
+                        </div>
+                        <!-- FAQ 6 -->
+                        <div class="bg-surface-card rounded-xl shadow-xs overflow-hidden">
+                            <button
+                                class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-sm focus:outline-none"
+                                type="button">
+                                <span class="font-headline-sm text-[16px] font-bold text-primary-container">6. Do you
+                                    inspect only homes?</span>
+                                <span
+                                    class="material-symbols-outlined text-secondary-container transition-transform duration-200">add</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md pb-space-md pt-0 text-text-body font-body-sm text-body-sm leading-relaxed border-t border-surface-subtle">
+                                No. In addition to independent houses, flats, and bungalows, we routinely inspect
+                                commercial offices, retail centers, luxury hotels, hospital suites, manufacturing
+                                facilities, and housing society common infrastructure (facades, vertical service shafts,
+                                basements, and terrace water tanks).
+                            </div>
+                        </div>
+                        <!-- FAQ 7 -->
+                        <div class="bg-surface-card rounded-xl shadow-xs overflow-hidden">
+                            <button
+                                class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-sm focus:outline-none"
+                                type="button">
+                                <span class="font-headline-sm text-[16px] font-bold text-primary-container">7. Will you
+                                    need access to the adjoining or upper property?</span>
+                                <span
+                                    class="material-symbols-outlined text-secondary-container transition-transform duration-200">add</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md pb-space-md pt-0 text-text-body font-body-sm text-body-sm leading-relaxed border-t border-surface-subtle">
+                                If the moisture pattern suggests water ingress from an overhead bathroom, terrace, or
+                                adjoining apartment, coordinating access to that area significantly improves diagnostic
+                                certainty. While our engineers can gather valuable data from within your property alone,
+                                inspecting the suspected origin unit often provides conclusive evidence to resolve
+                                cross-neighbor disputes amicably.
+                            </div>
+                        </div>
+                        <!-- FAQ 8 -->
+                        <div class="bg-surface-card rounded-xl shadow-xs overflow-hidden">
+                            <button
+                                class="faq-toggle w-full text-left p-space-md flex items-center justify-between gap-space-sm focus:outline-none"
+                                type="button">
+                                <span class="font-headline-sm text-[16px] font-bold text-primary-container">8. How is
+                                    the inspection fee decided and when will I receive findings?</span>
+                                <span
+                                    class="material-symbols-outlined text-secondary-container transition-transform duration-200">add</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md pb-space-md pt-0 text-text-body font-body-sm text-body-sm leading-relaxed border-t border-surface-subtle">
+                                The inspection fee depends on the size of the property, number of affected zones,
+                                accessibility, and diagnostic scope requested. Our advisory desk will provide a
+                                transparent, fixed estimate upfront after reviewing your symptoms. Verbal debriefing is
+                                provided on-site immediately after the inspection, followed by the structured formal
+                                digital report within 24 to 48 hours.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       SECTION 12: FINAL HIGH-IMPACT CTA BAND
+       ========================================== -->
+            <section class="w-full py-space-3xl bg-surface-subtle">
+                <div class="max-w-[1240px] mx-auto px-gutter">
+                    <div
+                        class="bg-primary-container rounded-3xl p-space-xl lg:p-space-2xl text-center text-on-primary relative overflow-hidden shadow-2xl">
+                        <!-- Decorative subtle geometric rings -->
+                        <div
+                            class="absolute -top-24 -left-24 w-80 h-80 rounded-full border border-surface-card/10 pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full border border-surface-card/10 pointer-events-none">
+                        </div>
+                        <div class="max-w-3xl mx-auto space-y-space-md relative z-10">
+                            <span
+                                class="font-eyebrow-badge text-eyebrow-badge uppercase text-secondary-container font-bold tracking-widest">DIAGNOSE
+                                FIRST, REPAIR RIGHT</span>
+                            <h2 class="font-display text-display leading-tight text-on-primary">
+                                Before You Break. <br>
+                                Before You Waterproof. <br>
+                                <span class="text-secondary-container">Find the Source First.</span>
+                            </h2>
+                            <p class="font-body-lg text-body-lg text-on-primary-container max-w-xl mx-auto">
+                                Tell us what you are seeing. We will first understand the problem, review photographs,
+                                and help determine the appropriate diagnostic scope.
+                            </p>
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-space-sm pt-space-sm">
+                                <a class="w-full sm:w-auto px-space-lg py-4 rounded-lg bg-secondary-container hover:bg-brand-accent-hover text-on-secondary font-headline-sm text-[16px] font-bold shadow-lg transition-all text-center"
+                                    href="#hero-diagnostic-form">
+                                    TELL US WHAT YOU ARE SEEING →
+                                </a>
+                                <a class="w-full sm:w-auto px-space-md py-4 rounded-lg bg-whatsapp-direct hover:opacity-95 text-on-secondary font-headline-sm text-[16px] font-bold flex items-center justify-center gap-2 shadow-lg transition-all text-center"
+                                    href="https://wa.me/918017054000?text=Hi%20MACJ,%20I%20have%20photos%20of%20a%20seepage%20issue"
+                                    rel="noopener noreferrer" target="_blank">
+                                    <span class="material-symbols-outlined text-[20px]">chat</span>
+                                    <span class="">WHATSAPP PHOTOS</span>
+                                </a>
+                                <a class="w-full sm:w-auto px-space-md py-4 rounded-lg bg-surface-card/10 hover:bg-surface-card/20 text-on-primary font-headline-sm text-[16px] font-bold flex items-center justify-center gap-2 transition-all text-center"
+                                    href="tel:918017054000">
+                                    <span class="material-symbols-outlined text-[20px]">call</span>
+                                    <span class="">+91 80170 54000</span>
+                                </a>
+                            </div>
+                            <p class="font-label-sm text-[12px] text-on-primary-container pt-2">
+                                Pan-India Diagnostics • Kolkata • Mumbai • Delhi NCR • Bengaluru • Pune • Hyderabad •
+                                Chennai • Ahmedabad
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ==========================================
+       MOBILE PERSISTENT BOTTOM CONVERSION BAR
+       ========================================== -->
+            <div
+                class="xl:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-card/95 backdrop-blur-md p-space-xs border-t border-surface-dim shadow-2xl flex items-center gap-space-xs">
+                <a class="flex-1 py-3 rounded-lg bg-whatsapp-direct text-on-secondary font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm text-center"
+                    href="https://wa.me/918017054000?text=Hi%20MACJ,%20I%20want%20to%20send%20photos%20of%20a%20leakage"
+                    rel="noopener noreferrer" target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span class="">WhatsApp Photos</span>
+                </a>
+                <a class="flex-1 py-3 rounded-lg bg-secondary-container text-on-secondary font-label-md text-label-md font-bold text-center shadow-sm"
+                    href="#hero-diagnostic-form">
+                    <span class="">Enquire Now</span>
+                </a>
+            </div>
+        </div>
+        <!-- Inline Client-side FAQ Accordion Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const accordions = document.querySelectorAll('#faq-accordion-container .faq-toggle');
+                accordions.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const content = button.nextElementSibling;
+                        const icon = button.querySelector('.material-symbols-outlined');
+                        const isOpen = !content.classList.contains('hidden');
+
+                        // Close all
+                        document.querySelectorAll('#faq-accordion-container .faq-content').forEach(c => c.classList.add('hidden'));
+                        document.querySelectorAll('#faq-accordion-container .material-symbols-outlined').forEach(i => {
+                            i.textContent = 'add';
+                            i.classList.remove('rotate-45');
+                        });
+
+                        // Toggle clicked
+                        if (!isOpen) {
+                            content.classList.remove('hidden');
+                            icon.textContent = 'close';
+                        }
+                    });
+                });
+            });
+        </script>
+    </main>
+    <footer class="w-full bg-primary-container text-surface-subtle">
+        <div class="max-w-[1240px] mx-auto px-gutter pt-space-3xl pb-space-2xl">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-2xl border-b border-primary/40">
+                <div class="lg:col-span-4 space-y-space-md">
+                    <div class="flex items-center gap-space-sm">
+                        <div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center"><span
+                                class="material-symbols-outlined text-on-secondary text-[20px]">verified</span></div>
+                        <span class="font-headline-md text-headline-md text-on-primary font-bold">MACJ India</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-on-primary-container max-w-sm">India's premier diagnostic
+                        home inspection institution. Collaborating with A Buyer's Choice Home Inspections (USA &amp;
+                        Canada) to deliver unbiased, non-destructive technical risk assessments and thermal audits.</p>
+                    <div class="flex flex-wrap gap-space-xs pt-space-xs"><span
+                            class="inline-flex items-center px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary font-label-sm text-label-sm border border-tertiary"><span
+                                class="material-symbols-outlined text-[14px] mr-1 text-secondary-container">military_tech</span>ISO
+                            Certified Diagnostic Audit</span><span
+                            class="inline-flex items-center px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary font-label-sm text-label-sm border border-tertiary"><span
+                                class="material-symbols-outlined text-[14px] mr-1 text-whatsapp-direct">verified_user</span>InterNACHI
+                            Standard</span></div>
+                </div>
+                <div class="lg:col-span-3 space-y-space-sm">
+                    <h4 class="font-headline-sm text-headline-sm text-on-primary font-semibold">Pan-India Presence</h4>
+                    <p class="font-body-sm text-body-sm text-on-primary-container">Engineering diagnostic hubs stationed
+                        across 8+ major metropolitan sectors:</p>
+                    <div
+                        class="grid grid-cols-2 gap-y-1 gap-x-space-sm font-label-md text-label-md text-on-primary-container">
+                        <span class="hover:text-on-primary transition-colors">• Kolkata (HQ)</span><span
+                            class="hover:text-on-primary transition-colors">• Mumbai</span><span
+                            class="hover:text-on-primary transition-colors">• Delhi NCR</span><span
+                            class="hover:text-on-primary transition-colors">• Bengaluru</span><span
+                            class="hover:text-on-primary transition-colors">• Pune</span><span
+                            class="hover:text-on-primary transition-colors">• Chennai</span><span
+                            class="hover:text-on-primary transition-colors">• Hyderabad</span><span
+                            class="hover:text-on-primary transition-colors">• Ahmedabad</span></div>
+                </div>
+                <div class="lg:col-span-3 space-y-space-sm">
+                    <h4 class="font-headline-sm text-headline-sm text-on-primary font-semibold">Diagnostic Scopes</h4>
+                    <ul class="space-y-1.5 font-body-sm text-body-sm text-on-primary-container">
+                        <li class="">Pre-Delivery Handover Inspection</li>
+                        <li class="">Dampness &amp; Moisture Leakage Audit</li>
+                        <li class="">Thermal Infrared Envelope Mapping</li>
+                        <li class="">Electrical Load &amp; Safety Diagnostics</li>
+                        <li class="">Plumbing Line Pressure Verification</li>
+                        <li class="">Structural Crack &amp; Foundation Survey</li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2 space-y-space-sm">
+                    <h4 class="font-headline-sm text-headline-sm text-on-primary font-semibold">Hotline &amp; Desk</h4>
+                    <div class="space-y-space-xs font-body-sm text-body-sm text-on-primary-container">
+                        <p class="text-on-primary font-semibold">Central Helpline:</p><a
+                            class="hover:text-on-primary transition-colors block font-mono" href="tel:918017054000">+91
+                            80170 54000</a>
+                        <p class="text-on-primary font-semibold pt-1">Instant WhatsApp:</p><a
+                            class="inline-flex items-center gap-1 text-whatsapp-direct hover:underline font-label-md text-label-md"
+                            href="https://wa.me/918017054000" rel="noopener noreferrer" target="_blank"><span
+                                class="material-symbols-outlined text-[16px]">chat</span> Connect Directly</a>
+                        <p class="text-on-primary font-semibold pt-1">Operations Desk:</p><span
+                            class="block">contact@macj-abchi.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-space-xl space-y-space-md text-on-primary-container font-body-sm text-body-sm">
+                <div class="bg-tertiary-container/80 p-space-md rounded-lg border border-primary">
+                    <p class="font-semibold text-on-primary mb-1 flex items-center gap-1.5"><span
+                            class="material-symbols-outlined text-[16px] text-secondary-container">info</span> Technical
+                        Diagnostic Disclaimer</p>
+                    <p class="text-[12px] leading-relaxed text-on-tertiary-container">MACJ inspection audits are visual,
+                        non-invasive, and non-destructive evaluations performed using acoustic, moisture sensor, and
+                        infrared thermography equipment available on the inspection date. Reports identify current
+                        observable defects, safety hazards, and thermal/moisture anomalies according to standardized
+                        checklist matrices. Inspections do not constitute architectural warranties, structural
+                        guarantees, or legal property compliance certifications.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+                    <p class="text-on-primary-container font-label-sm text-label-sm">© 2024 MACJ - A Buyer's Choice Home
+                        Inspections India. All rights reserved.</p>
+                    <div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-primary-container"><a
+                            class="hover:text-on-primary transition-colors" href="#">Privacy Policy</a><span
+                            class="">•</span><a class="hover:text-on-primary transition-colors" href="#">Terms of
+                            Inspection</a><span class="">•</span><a class="hover:text-on-primary transition-colors"
+                            href="#">ISO Compliance</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
